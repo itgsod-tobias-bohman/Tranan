@@ -30,3 +30,7 @@ img.background {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+#page-boxinfo p {
+	color: white;
+}
