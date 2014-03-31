@@ -35,6 +35,11 @@ img.background {
 	margin-right: auto;
 }
 
+#page-boxinfo h1 {
+	color: white;
+	font-weight: 900;
+}
+
 #page-boxinfo p {
 	color: white;
 }
