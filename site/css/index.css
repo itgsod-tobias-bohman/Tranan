@@ -36,14 +36,14 @@ img.background {
 }
 
 #page-boxinfo h1 {
-	color: white;
+	color: #FBFFFC;
 	font-weight: 900;
 	text-align: center;
     display: block;
 }
 
 #page-boxinfo p {
-	color: white;
+	color: #FBFFFC;
 	font-size: 1em;
 	margin-left: 20px;
 	margin-right: 20px;
