@@ -1,3 +1,7 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
 *{
 	margin: 0px;
 	width: 100%;
@@ -13,4 +17,28 @@
 #bg_img_rooms {
 	width: 100%;
 	height: 67%;
+	-webkit-box-shadow: 0 10px 6px -6px #00CC48;
+	   -moz-box-shadow: 0 10px 6px -6px #00CC48;
+	        box-shadow: 0 10px 6px -6px #00CC48;
+}
+
+#content {
+	position: relative; 
+	width: 80%; 
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+h1 {
+	color: #FBFFFC;
+	font-weight: 900;
+    display: inline-block;
+    font-size: 60px;
+}
+p {
+	color: black;
+	font-size: 1em;
+	display: inline-block;
+	margin-right: 40px;
+	margin-left: 40px;
 }
