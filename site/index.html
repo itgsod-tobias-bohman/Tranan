@@ -5,12 +5,31 @@
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script type='text/javascript' src='menu_jquery.js'></script>
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
 	</head>
 
 	<body>
 
 		<img src="images/index/background.jpg" class="background">
+
+		<div id='cssmenu'>
+			<ul>
+   				<li class='active'><a href='index.html'><span>Home</span></a></li>
+   				<li class='has-sub'><a href='#'><span>Rooms</span></a>
+      				<ul>
+         				<li><a href='#'><span>Room 1</span></a></li>
+         				<li><a href='#'><span>Room 2</span></a></li>
+         				<li><a href='#'><span>Room 3</span></a></li>
+         				<li class='last'><a href='#'><span>Room 4</span></a></li>
+      				</ul>
+   				</li>
+   				<li><a href='#'><span>Location</span></a></li>
+   				<li class='last'><a href='#'><span>During the Stay</span></a></li>
+			</ul>
+		</div>
+
 
 		<div id="page-boxinfo">
 			<div id="boxlogo"><img src="images/logo.png"></div>
