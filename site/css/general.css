@@ -70,10 +70,12 @@ p {
 /* ############ */
 
 #cssmenu {
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   height: 44px;
   background: #2b2f3a;
-  width: auto;
+  width: 470px;
 }
 #cssmenu ul {
   list-style: none;
