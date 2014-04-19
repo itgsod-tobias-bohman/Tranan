@@ -30,6 +30,13 @@ img.background {
 	background-color:rgba(0,0,0,.5); 
 }
 
+@media screen and (max-width: 800px){
+	#page-boxinfo {
+		width: auto;
+		height: auto;
+	}
+}
+
 #boxlogo {
 	text-align: center;
     display: block;
