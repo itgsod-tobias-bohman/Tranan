@@ -25,7 +25,7 @@ img.background {
 	float: right;
 	position: relative; 
 	width: 350px; 
-	margin: 25px 100px auto; 
+	margin: 25px 100px 20px auto; 
 	padding: 10px; 
 	background-color:rgba(0,0,0,.5); 
 }
@@ -34,6 +34,8 @@ img.background {
 	#page-boxinfo {
 		width: auto;
 		height: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -56,13 +58,14 @@ img.background {
 	margin-right: 20px;
 }
 
+/*
 #footer {
 	background-color:rgba(0,0,0,.5); 
 	width: 100%;
 	height: 50px;
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	margin: -50px auto auto auto;
+	position: relative;
+	clear: both;
 }
 
 #footer p {
@@ -72,7 +75,7 @@ img.background {
 }
 
 
-
+*/
 
 
 
