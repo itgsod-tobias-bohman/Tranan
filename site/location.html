@@ -7,10 +7,27 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 		<script type='text/javascript' src='menu_jquery.js'></script>
+		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+
+		<script>
+  			function initialize() {
+        		var map_canvas = document.getElementById('map_canvas');
+        		var map_options = { 
+          			center: new google.maps.LatLng(35.0689022, 135.8303282),
+          			zoom: 15,
+          			mapTypeId: google.maps.MapTypeId.ROADMAP
+        		}
+        		var map = new google.maps.Map(map_canvas, map_options)
+      		}
+      		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 	</head>
 
 	<body>
+
+		<div id="map_canvas"></div>
+
 
 		<div id='cssmenu'>
 			<ul>
@@ -27,9 +44,6 @@
    				<li class='last'><a href='during.html'><span>During the Stay</span></a></li>
 			</ul>
 		</div>
-
-
-
 
 
 	</body>
