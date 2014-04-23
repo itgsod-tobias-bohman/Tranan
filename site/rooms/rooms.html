@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hotel Kurēn - Rooms</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/general.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+		<script type='text/javascript' src='menu_jquery.js'></script>
+		<link rel="icon" type="image/ico" href="../images/favicon.ico"/>
+		<script> 
+		function dynamicContainer(){
+			var result = $("#background").height() - 50;
+			var element = document.getElementById('content');
+			element.setAttribute('style', 'margin-top: '+result+'px');
+		}
+		</script>
+	</head>
+
+	<body onload="dynamicContainer()">
+
+		<img src="../images/rooms/bg_img_rooms.jpg" id="background">
+
+		<div id="stopper">
+
+		<div id='cssmenu'>
+			<ul>
+   				<li class='active'><a href='../index.html'><span>Home</span></a></li>
+   				<li class='has-sub'><a href='../rooms.html'><span>Rooms</span></a>
+      				<ul>
+         				<li><a href='#'><span>Room 1</span></a></li>
+         				<li><a href='#'><span>Room 2</span></a></li>
+         				<li><a href='#'><span>Room 3</span></a></li>
+         				<li class='last'><a href='#'><span>Room 4</span></a></li>
+      				</ul>
+   				</li>
+   				<li><a href='../location.html'><span>Location</span></a></li>
+   				<li class='last'><a href='../during.html'><span>During the Stay</span></a></li>
+			</ul>
+		</div>
+
+		</div>
+
+		<div id="wrapper">
+
+			<div id="content">
+
+						<h1>rooms</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis nisl in ligula dictum venenatis. Vestibulum vitae suscipit lacus. Donec in justo et nulla viverra scelerisque quis sed nisi. In pellentesque leo et dui mattis, id malesuada nulla interdum. Proin convallis vel massa vitae venenatis. Nulla hendrerit nibh vel convallis hendrerit. Sed fermentum nisi eget rhoncus faucibus. Phasellus pretium aliquam porttitor. Vivamus at convallis velit. </p> <p>
+
+		Proin sagittis porttitor metus at euismod. Donec sollicitudin tortor ornare, consequat diam in, pretium justo. Sed ligula risus, congue sed convallis nec, facilisis et augue. Quisque libero lacus, blandit at rhoncus id, aliquet non eros. Donec egestas nulla elit, sed dictum neque consequat eget. Sed egestas mi eu ullamcorper lobortis. Aliquam imperdiet nisl a tellus posuere porta. Vivamus posuere orci gravida, dignissim dolor a, ornare quam. Vestibulum vitae erat tempus, scelerisque arcu dapibus, accumsan lorem. Vivamus sem ipsum, facilisis a vehicula eget, fringilla vel ligula. Nunc auctor lectus vel tellus facilisis, vel lacinia dolor suscipit. Aliquam mattis erat eu convallis sodales. Praesent id ornare lectus, ac consectetur enim. Nullam adipiscing felis adipiscing accumsan luctus.
+						</p>
+
+			</div>
+
+		</div>
+
+	</body>
+</html>
