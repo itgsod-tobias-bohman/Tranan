@@ -21,10 +21,16 @@
         		var map = new google.maps.Map(map_canvas, map_options)
       		}
       		google.maps.event.addDomListener(window, 'load', initialize);
+		
+			function dynamicContainer(){
+				var result = $("#map_canvas").height() - 50;
+				var element = document.getElementById('content');
+				element.setAttribute('style', 'margin-top: '+result+'px');
+			}
 		</script>
 	</head>
 
-	<body>
+	<body onload="dynamicContainer()">
 
 		<div id="map_canvas"></div>
 

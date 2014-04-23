@@ -7,7 +7,7 @@ body {
 	background-image: url(../images/body_bg.png); background-repeat:repeat;
 }
 
-img.background {
+img#background {
 	margin-right: 5px;
 
 	min-height: 67%;
@@ -19,21 +19,23 @@ img.background {
 	top: 0;
 	left: 0;
 	position: absolute;
+	display: block;
 }
 
 @media screen and (max-width: 1024px){
-	img.background {
+	img#background {
 		left: 50%;
 		margin-left: -512px; 
 	}
 }
 
 #content {
-	margin-top: 33%;
-	width: 80%; 
-	height: 500px;
+	display: block;
+	clear: both;
+	height: auto; 
+	width: 80%;
+	margin-right: auto;
 	margin-left: auto;
-	margin-right: auto; 
 	background-color: black;
 }
 
@@ -73,14 +75,6 @@ p {
 	left: 0;
 	position: absolute;
 }
-
-@media screen and (max-width: 1024px){
-	#map_canvas {
-		left: 50%;
-		margin-left: -512px; 
-	}
-}
-
 
 
 
