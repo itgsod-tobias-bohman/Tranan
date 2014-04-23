@@ -8,9 +8,18 @@
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 		<script type='text/javascript' src='menu_jquery.js'></script>
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<script> 
+		function dynamicContainer(){
+			var result = $("#background").height() - 50;
+			var element = document.getElementById('content');
+			element.setAttribute('style', 'margin-top: '+result+'px');
+		}
+		</script>
 	</head>
 
-	<body>
+	<body onload="dynamicContainer()">
+
+		<img src="images/during/bg_img_during.jpg" id="background">
 
 		<div id='cssmenu'>
 			<ul>
