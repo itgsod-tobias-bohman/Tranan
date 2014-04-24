@@ -8,9 +8,20 @@
 		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 		<script type='text/javascript' src='menu_jquery.js'></script>
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<script src="alertify.min.js"></script>
+		<link rel="stylesheet" href="./css/alertify.core.css" />
+		<link rel="stylesheet" href="./css/alertify.default.css" />
+		<script> 
+		$(window).bind("resize", function(){
+    		screenOrientation = ($(window).width() > $(window).height())? 90 : 0;
+    		if(screenOrientation === 0){
+    			alertify.alert("Please use landscape mode to experience the website as it should be!");
+    		}
+		});
+		</script>
 	</head>
 
-	<body>
+	<body onload="resize()">
 
 		<img src="images/index/background.jpg" class="background">
 
