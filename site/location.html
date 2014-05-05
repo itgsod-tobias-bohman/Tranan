@@ -11,22 +11,34 @@
 		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
 
 		<script>
-  			function initialize() {
-        		var map_canvas = document.getElementById('map_canvas');
-        		var map_options = { 
-          			center: new google.maps.LatLng(35.0689022, 135.8303282),
-          			zoom: 15,
-          			mapTypeId: google.maps.MapTypeId.ROADMAP
-        		}
-        		var map = new google.maps.Map(map_canvas, map_options)
-      		}
-      		google.maps.event.addDomListener(window, 'load', initialize);
-		
+			function initialize() {
+			  	var myLatlng = new google.maps.LatLng(35.0689022, 135.8303282);
+			  	var mapOptions = {
+			    	zoom: 16,
+			    	center: myLatlng,
+			    	disableDefaultUI: true,
+			    	draggable: false, 
+			    	zoomControl: false, 
+			    	scrollwheel: false, 
+			    	disableDoubleClickZoom: true
+			  	}
+			  	var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+			  	var marker = new google.maps.Marker({
+		    	  	position: myLatlng,
+			      	map: map,
+			      	title: 'Hotel Kurēn'
+			  	});
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+
 			function dynamicContainer(){
 				var result = $("#map_canvas").height() - 50;
 				var element = document.getElementById('content');
 				element.setAttribute('style', 'margin-top: '+result+'px');
 			}
+
 		</script>
 	</head>
 
