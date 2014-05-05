@@ -52,6 +52,23 @@ p {
 }
 
 
+#footer p {
+	text-align: center;
+	color: grey;
+	font-size: 1em;
+}
+
+@media screen and (max-width: 800px){
+	#footer {
+		height: 30px;
+		margin: -30px auto 0px auto;
+	}
+
+	#footer p {
+		font-size: 0.75em;
+	}
+}
+
 
 
 
